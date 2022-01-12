@@ -9,13 +9,13 @@ class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text("Catalog App"),
+        title: Text("Catalog Apps"),
       ),
       body: Center(
         // ignore: avoid_unnecessary_containers
         child: Container(
           // ignore: prefer_const_constructors
-          child: Text("Hello!! Days=$days"),
+          child: Text("Tutorial Days=$days"),
         ),
       ),
       drawer: Drawer(),
