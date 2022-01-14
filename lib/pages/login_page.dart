@@ -1,3 +1,5 @@
+// ignore_for_file: prefer_const_constructors
+
 import 'package:flutter/material.dart';
 
 class loginPage extends StatelessWidget {
@@ -15,10 +17,10 @@ class loginPage extends StatelessWidget {
             ),
             const SizedBox(
               height: 20.0,
-            )
-            const Text(
+            ),
+            Text(
               "Welcome",
-              style: TextStyle(
+              style: const TextStyle(
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
               ),
