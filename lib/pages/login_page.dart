@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 
+// ignore: camel_case_types
 class loginPage extends StatelessWidget {
   const loginPage({Key? key}) : super(key: key);
 
@@ -24,6 +25,32 @@ class loginPage extends StatelessWidget {
                 fontSize: 22,
                 fontWeight: FontWeight.bold,
               ),
+            ),
+            SizedBox(
+              height: 40.0,
+            ),
+            TextFormField(
+              decoration: InputDecoration(
+                hintText: "Enter username",
+                labelText: "Username",
+              ),
+            ),
+            TextFormField(
+              obscureText: true,
+              decoration: InputDecoration(
+                hintText: "Enter password",
+                labelText: "Password",
+              ),
+            ),
+            SizedBox(
+              height: 40.0,
+            ),
+            ElevatedButton(
+              child: Text("Login"),
+              style: TextButton.styleFrom(minimumSize: Size(150, 40)),
+              onPressed: () {
+                //Navigator.pushNamed(context, MyRoutes.homeRoute);
+              },
             )
           ],
         ));
